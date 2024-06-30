@@ -14,13 +14,11 @@ def main():
     args = parser.parse_args()
 
     try:
-
         if args.extract and args.filename:
             if not check_correct_type(args.filename):
-                raise Exception(f"Unsupported file type. Only {SUPPORTED_TYPES} are supported.")
-            
+                raise Exception(f"Unsupported file type. Only {SUPPORTED_TYPES} are supported.")    
             extract_archive(args.filename)
-
+            
     except Exception as e:
         show_logo('ERROR')
         print(e)

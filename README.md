@@ -23,7 +23,7 @@ pip install archive_toolbox
 After installation, you can use the utility from the command line with the `atb` command.
 
 ```sh
-atb --extract --filename <archive.zip>
+atb --extract --filename <archive.type>
 ```
 
 ### Examples

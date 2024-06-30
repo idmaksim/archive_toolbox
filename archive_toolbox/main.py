@@ -28,4 +28,5 @@ def main():
         show_logo('ERROR')
         print(e)
 
-main()
+if __name__ == '__main__':
+    main()

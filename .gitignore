@@ -2,3 +2,5 @@ __pycache__
 .venv
 test/
 test.zip
+test.tar
+data

@@ -1,6 +1,6 @@
 import argparse
 
-from logic import extract_archive, create_tar_file
+from logic import extract_archive
 from utils import SUPPORTED_TYPES, check_correct_type, show_logo
 
 

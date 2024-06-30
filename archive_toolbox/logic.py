@@ -2,12 +2,11 @@ import os
 import tarfile
 from zipfile import ZipFile
 
-from utils import check_double_point_type
+from utils import check_double_point_type, is_zip
 
 
 def extract_archive(filename: str) -> None:
     archive_name = os.path.splitext(filename)[0]
-    is_zip = os.path.splitext(filename)[1] == ".zip"
 
     if check_double_point_type(filename):
         archive_name = os.path.splitext(archive_name)[0]
@@ -15,7 +14,7 @@ def extract_archive(filename: str) -> None:
     if not os.path.exists(archive_name):
         os.mkdir(archive_name)
 
-    if is_zip:
+    if is_zip(filename):
         with ZipFile(filename) as archive:
             for file in archive.namelist():
                 print(f'[+] Extracting {file} from {filename}')

@@ -58,7 +58,7 @@ atb --extract --filename example.tar.gz
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the **MIT License**.
 
 ## Authors
 

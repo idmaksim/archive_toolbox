@@ -34,6 +34,7 @@ atb --extract --filename <archive.type>
 atb --extract --filename example.zip
 ```
 
+
 #### Extracting a TAR Archive
 
 ```sh
@@ -45,10 +46,20 @@ atb --extract --filename example.tar
 ```sh
 atb --extract --filename example.tar.gz
 ```
+#### Info about a ZIP Archive
+
+```sh
+atb --info --filename example.zip
+```
+
+#### Info about a TAR Archive
+
+```sh
+atb --info --filename example.tar
+```
 
 ## Features
 
-- **Create archives**
 - **Extract archives**
 - **Display information about archive contents**
 
@@ -62,6 +73,6 @@ This project is licensed under the **MIT License**.
 
 ## Authors
 
-- **Dementev Maksim** - *Lead Developer* - [My Github profile](https://github.com/idmaksim)
+- **Dementev Maksim** - *Lead Developer* - [Github profile](https://github.com/idmaksim)
 
 

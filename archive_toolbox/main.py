@@ -1,6 +1,6 @@
 import argparse
 
-from archive_toolbox.logic import extract_archive
+from archive_toolbox.logic import extract_archive, show_info
 from archive_toolbox.utils import SUPPORTED_TYPES, check_correct_type, show_logo
 
 
@@ -23,6 +23,13 @@ def main():
             # extract archive        
             elif args.extract:
                 extract_archive(args.filename)
+
+            # show info
+            elif args.info:
+                show_info(args.filename)
+            
+        else:
+            parser.print_help()
             
     except Exception as e:
         show_logo('ERROR')

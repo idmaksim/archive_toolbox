@@ -26,3 +26,10 @@ def show_logo(logo_text: str) -> None:
 
 def is_zip(filename: str) -> bool:
     return os.path.splitext(filename)[1] == ".zip"
+
+
+def get_archive_name(filename: str)  -> str:
+    archive_name = os.path.splitext(filename)[0]
+    if check_double_point_type(filename):
+        archive_name = os.path.splitext(archive_name)[0]
+    return archive_name

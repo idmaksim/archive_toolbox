@@ -1,5 +1,6 @@
 import os
 import tarfile
+import time
 from zipfile import ZipFile
 
 from archive_toolbox.utils import get_archive_name, is_zip
@@ -27,6 +28,8 @@ def extract_archive(filename: str) -> None:
 
 def show_info_zip(filename: str):
     with ZipFile(filename) as archive:
+        print(f"Count of files: {len(archive.filelist)}")
+        time.sleep(1)
         for file in  archive.filelist:
             print(f'[+] File {file.filename}')
             print(f'\t- Size {file.file_size}')
@@ -36,6 +39,9 @@ def show_info_zip(filename: str):
 
 def show_info_tar(filename: str):
     with tarfile.open(filename) as archive:
+        print(f"Count of files: {len(archive.getmembers())}")
+        time.sleep(1)
+
         for file in archive.getmembers():
             print(f'[+] File {file.name}')
             print(f'\t- Size {file.size}')

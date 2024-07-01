@@ -1,4 +1,3 @@
-import datetime
 import os
 import tarfile
 from zipfile import ZipFile
@@ -33,6 +32,7 @@ def show_info_zip(filename: str):
             print(f'\t- Size {file.file_size}')
             print(f'\t- Created at {file.date_time[:3]}')
             print(f'\t- Compress size {file.compress_size}')
+
 
 def show_info_tar(filename: str):
     with tarfile.open(filename) as archive:

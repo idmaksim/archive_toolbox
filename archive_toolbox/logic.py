@@ -2,7 +2,7 @@ import os
 import tarfile
 from zipfile import ZipFile
 
-from utils import check_double_point_type, is_zip
+from archive_toolbox.utils import check_double_point_type, is_zip
 
 
 def extract_archive(filename: str) -> None:

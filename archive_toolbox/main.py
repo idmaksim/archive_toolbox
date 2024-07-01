@@ -1,7 +1,7 @@
 import argparse
 
-from logic import extract_archive
-from utils import SUPPORTED_TYPES, check_correct_type, show_logo
+from archive_toolbox.logic import extract_archive
+from archive_toolbox.utils import SUPPORTED_TYPES, check_correct_type, show_logo
 
 
 def main():

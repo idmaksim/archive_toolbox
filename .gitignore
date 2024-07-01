@@ -4,3 +4,6 @@ test/
 test.zip
 test.tar
 data
+archive_toolbox.egg-info
+dist
+build

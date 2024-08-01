@@ -6,7 +6,7 @@
 
 ## Description
 
-**Archive Toolbox** is a utility for managing archives, allowing you to create, extract, and display information about archives.
+**Archive Toolbox** is a utility for managing archives, allowing you extract and display information about archives.
 
 ## Installation
 
